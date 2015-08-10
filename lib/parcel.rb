@@ -13,8 +13,10 @@ class Parcel
       speed.upcase!()
       if speed == "YES"
         speed_price
-      else
+      elsif speed == "NO"
         price
+      elsif speed != ("YES" || "NO")
+        "Please enter either Yes or No in expedited shipping"
     end
   end
 end

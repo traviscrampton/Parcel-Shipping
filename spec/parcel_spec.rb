@@ -17,7 +17,7 @@ describe('Parcel') do
     end
     it('returns the cost of shipping with speed') do
       test_parcel=Parcel.new(5, 10, 3, 20)
-      expect(test_parcel.shipping(50, "yes")).to(eq(150))
+      expect(test_parcel.shipping(50, "dog")).to(eq("Please enter either Yes or No in expedited shipping"))
     end
   end
 end
